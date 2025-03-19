@@ -4,8 +4,8 @@ object Form1: TForm1
   VertScrollBar.Tracking = True
   BorderIcons = [biSystemMenu]
   Caption = 
-    'Fotka - wycinanie zdj'#281'c 1355x1650 pikseli max.100KB  -   Copyrig' +
-    'ht (c) 2014-2025 M@rcin GPL-2.0 license'
+    'Fotka v.2.1 - wycinanie zdj'#281'c 1355x1650 pikseli max.100KB  -   C' +
+    'opyright (c) 2014-2025 M@rcin GPL-2.0 license'
   ClientHeight = 741
   ClientWidth = 924
   Color = clBtnFace
@@ -229,12 +229,15 @@ object Form1: TForm1
   end
   object OpenPictureDialog1: TOpenPictureDialog
     Filter = 
-      'All (*.jpg;*.jpeg;*)|*.jpg;*.jpeg;*|JPEG Image File (*.jpg)|*.jp' +
-      'g|JPEG Image File (*.jpeg)|*.jpeg'
+      'All|*.jpg;*.jpeg|JPEG Image File (*.jpg)|*.jpg|JPEG Image File (' +
+      '*.jpeg)|*.jpeg'
     Left = 808
     Top = 400
   end
   object SavePictureDialog1: TSavePictureDialog
+    Filter = 
+      'All (*.jpg;*.jpeg)|*.jpg;*.jpeg;|JPEG Image File (*.jpg)|*.jpg|J' +
+      'PEG Image File (*.jpeg)|*.jpeg'
     Left = 800
     Top = 328
   end
