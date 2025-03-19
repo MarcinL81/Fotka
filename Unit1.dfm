@@ -1,9 +1,11 @@
 object Form1: TForm1
-  Left = 290
-  Top = 131
+  Left = 0
+  Top = 0
   VertScrollBar.Tracking = True
   BorderIcons = [biSystemMenu]
-  Caption = 'Fotka - wycinanie zdj'#281'c 1355x1650 pikseli max.100KB'
+  Caption = 
+    'Fotka - wycinanie zdj'#281'c 1355x1650 pikseli max.100KB  -   Copyrig' +
+    'ht (c) 2014-2025 M@rcin GPL-2.0 license'
   ClientHeight = 741
   ClientWidth = 924
   Color = clBtnFace
@@ -169,9 +171,8 @@ object Form1: TForm1
       item
         Width = 50
       end>
-    ExplicitLeft = -80
-    ExplicitTop = 611
-    ExplicitWidth = 986
+    ExplicitTop = 701
+    ExplicitWidth = 922
   end
   object Button5: TButton
     Left = 824
@@ -211,17 +212,19 @@ object Form1: TForm1
     OnClick = Button3Click
   end
   object CheckBox1: TCheckBox
-    Left = 768
+    Left = 769
     Top = 57
     Width = 147
     Height = 17
     Caption = 'Dodaj dat'#281' na zdj'#281'ciu'
+    Checked = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
+    State = cbChecked
     TabOrder = 6
   end
   object OpenPictureDialog1: TOpenPictureDialog
